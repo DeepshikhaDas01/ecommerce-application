@@ -3,7 +3,7 @@ import { SidebarContext } from '../contexts/SidebarContext';
 import { CartContext } from '../contexts/CartContext';
 import {BsBag} from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import Logo from '../img/logo.svg';
+import Person from '../img/person_FILL0_wght400_GRAD0_opsz48.svg';
 
 
 const Header = () => {
@@ -23,14 +23,15 @@ const Header = () => {
 
     <Link to={'/'}>
       <div>
-         <img className='w-[40px]' src={Logo} alt="" />
+         <img className='w-[40px] ' src={Person} alt="" />
       </div>
     </Link>
+
+    
     <div 
       onClick={()=> setIsOpen(!isOpen)} 
       className="cursor-pointer flex relative ">
-    
-      <BsBag className='text-2xl '/>
+      <BsBag className='text-3xl '/>
       <div className='bg-red-700 -right-2 -bottom-2 text-[12px] w-[18px] h-[18px]
       text-white rounded-full flex justify-center items-center'>
         {itemAmount}
