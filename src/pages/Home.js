@@ -13,31 +13,31 @@ const [filter, setFilter] = useState(products);
 const FilterProducts = () => {
   return (
   <>
-    <div className="flex flex-row gap-x-4 justify-items-center">
-     <button className="border-solid" onClick={() => setFilter(products)}>
+    <div className="flex flex-row pl-24 pb-4 gap-x-4 justify-items-center">
+     <button className="p-2 border-solid border-2 border-black " onClick={() => setFilter(products)}>
       All
      </button>
      <button
-       className="btn btn-outline-dark-me-2"
+       className="p-2 border-solid border-2 border-black"
        onClick={() => filterProduct("men's clothing")}
      >
       Men's Clothing
      </button>
     <button
    
-   className="btn btn-outline-dark-me-2"
+   className="p-2 border-solid border-2 border-black"
    onClick={() => filterProduct("women's clothing")}
    >
       Women's Clothing
       </button>
     <button
-    className="btn btn-outline-dark-me-2"
+    className="p-2 border-solid border-2 border-black"
     onClick={() => filterProduct("electronics")}
    >
       Electronics
  </button>
  <button
- className="btn btn-outline-dark-me-2"
+ className="p-2 border-solid border-2 border-black"
  onClick={() => filterProduct("jewelery")}
  >
  Jewelery
