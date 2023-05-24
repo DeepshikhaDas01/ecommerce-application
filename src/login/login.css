@@ -3,9 +3,9 @@
     margin: 0 auto;
     padding: 20px;
     margin-top: 100px;
-    background-color: #f1f1f1;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px #7F8487;
   }
   
   h2 {
@@ -40,7 +40,7 @@
     display: block;
     width: 100%;
     padding: 8px;
-    background-color: #4caf50;
+    background-color: black;
     color: white;
     font-size: 14px;
     border: none;
@@ -50,7 +50,7 @@
   }
   
   .btn-login:hover {
-    background-color: #45a049;
+    background-color: grey;
   }
   
   .additional-options {
@@ -68,7 +68,7 @@
   
   .btn-signup {
     padding: 8px 16px;
-    background-color: #4caf50;
+    background-color: black;
     color: white;
     font-size: 14px;
     border: none;
@@ -77,7 +77,7 @@
   }
   
   .btn-signup:hover {
-    background-color: #45a049;
+    background-color: grey;
   }
   .icon-container {
       display: flex;

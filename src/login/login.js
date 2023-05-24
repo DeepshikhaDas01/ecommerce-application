@@ -41,9 +41,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-         <div className="icon-container">
-        <i className="fas fa-user-circle"></i>
-      </div>
+     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
       <h2><i className="fas fa-lock"></i> Login</h2>
@@ -77,7 +75,7 @@ const Login = () => {
       </form>
       <div className="additional-options">
         <a href="#" className="forgot-password">Forgot Password?</a>
-        <button type="button" className="btn-signup">Sign Up</button>
+        {/* <button type="button" className="btn-signup">Sign Up</button> */}
       </div>
     </div>
   );
