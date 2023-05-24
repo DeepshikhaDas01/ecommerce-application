@@ -5,6 +5,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Login from './login/login';
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
 
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetails />} />
-
+        <Route path='/login' element={<Login/>}/>
         </Routes>
        <Sidebar />
       <Footer />

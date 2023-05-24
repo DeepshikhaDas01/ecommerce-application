@@ -21,8 +21,8 @@ const Header = () => {
     <header className={`${isActive? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
 
-    <Link to={'/'}>
-      <div>
+    <Link to={'/login'}>
+      <div >
          <img className='w-[40px] ' src={Person} alt="" />
       </div>
     </Link>
