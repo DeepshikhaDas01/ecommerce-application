@@ -54,9 +54,7 @@ const isValid = validateForm();
 
 if (isValid) {
 console.log(formData);
-// Here you can implement the logic to register the user
 
-// Clear the form inputs
 setFormData(initialFormData);
 }
 };
