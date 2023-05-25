@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css'; 
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -75,7 +76,9 @@ const Login = () => {
       </form>
       <div className="additional-options">
         <a href="#" className="forgot-password">Forgot Password?</a>
-        {/* <button type="button" className="btn-signup">Sign Up</button> */}
+        <Link to="/register">
+        <button type="button" className="btn-signup">Sign Up</button>
+        </Link>
       </div>
     </div>
   );

@@ -6,20 +6,22 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Login from './login/login';
+import RegistrationForm from './login/register';
 
 
 const App = () => {
-  return <div className='overflow-hidden'>
+  return <div>
     <Router>
-      <Header />
+     
       <Routes>
 
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<RegistrationForm/>}/>
         </Routes>
        <Sidebar />
-      <Footer />
+     
     </Router>
   </div>;
 };

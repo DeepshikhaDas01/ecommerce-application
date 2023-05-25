@@ -3,6 +3,8 @@ import { ProductContext } from '../contexts/ProductContext';
 import Product from '../components/Product';
 import Hero from '../components/Hero';
 import { useState } from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -75,6 +77,7 @@ const ShowProducts = () => {
  return (
 
  <div>
+  <Header/>
 
  <Hero />
 
@@ -93,7 +96,7 @@ const ShowProducts = () => {
  </div>
 
  </section>
-
+ <Footer />
  </div>
 
 );

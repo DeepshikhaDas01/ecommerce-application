@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
 import { ProductContext } from '../contexts/ProductContext';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const ProductDetails = () => {
@@ -23,7 +25,8 @@ const ProductDetails = () => {
 
   const {title, price, description, image}= product;
 
-  return (
+  return (<>
+      <Header/>
   <section className='pt-32 pb-12 lg:py32 h-screen flex items-center'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row items-center'>
@@ -44,6 +47,8 @@ const ProductDetails = () => {
     </div>
 
   </section>
+  
+  </>
   );
 };
 
